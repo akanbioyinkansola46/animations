@@ -3,3 +3,143 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    overflow: hidden;
+}
+.scene{
+     width: 100%;
+    height: 100vh;
+    background: linear-gradient(#65c7f7, #dff6ff);
+    position: relative;
+    overflow: hidden;
+
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 60px;
+    right: 120px;
+
+    box-shadow: 0 0 40px yellow;
+}
+.move{
+    display: flex;
+}
+.cloud {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: -75px;
+    left: 100px;
+
+    animation: moveCloud 5s linear infinite;
+}
+
+@keyframes moveCloud {
+
+    from {
+        transform: translate(-300px,50px);
+    }
+
+    to {
+        transform: translate(1000px, 5px);
+    }
+
+}
+.cloud1 {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: -95px;
+    left: 100px;
+
+    animation: moveCloud 20s linear infinite;
+}
+
+@keyframes moveCloud {
+
+    from {
+        transform: translate(-300px,50px);
+    }
+
+    to {
+        transform: translate(1000px, 5px);
+    }
+
+}
+.lady{
+    position: absolute;
+    font-size: 80px;
+    bottom: 190px;
+}
+
+.lady1 {
+    left: 5%;
+}
+
+.lady2 {
+    left: 50%;
+    
+}
+
+.road {
+    width: 100%;
+    height: 220px;
+
+    background: #333;
+
+    position: absolute;
+    bottom: 0;
+}
+.road-line {
+    width: 100%;
+    height: 5px;
+
+    background: repeating-linear-gradient(
+        to right,
+        white 0px,
+        white 100px,
+        transparent 100px,
+        transparent 200px
+    );
+
+    position: absolute;
+    top: 100px;
+
+    animation: roadMove 1s linear infinite;
+}
+
+@keyframes roadMove {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200px);
+    }
+
+}
+
+.car{
+    animation: motor 4s linear infinite;
+    position: absolute;
+    top: 150px;
+     left: -300px;
+}
+@keyframes motor{
+ 0%{
+    transform: translate(-290px, 20px);
+    
+ }
+ 100%{
+    transform: translate(1600px, 20px);
+   
+ }
+}

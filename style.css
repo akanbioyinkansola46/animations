@@ -79,18 +79,15 @@ body{
     bottom: 190px;
 }
 
-.lady1 {
-    left: 5%;
-}
-
 .lady2 {
     left: 50%;
+    top: 130px;
     
 }
 
 .road {
     width: 100%;
-    height: 220px;
+    height: 120px;
 
     background: #333;
 
@@ -130,7 +127,7 @@ body{
 .car{
     animation: motor 4s linear infinite;
     position: absolute;
-    top: 150px;
+    top: 250px;
      left: -300px;
 }
 @keyframes motor{
@@ -143,3 +140,6 @@ body{
    
  }
 }
+
+
+ 
